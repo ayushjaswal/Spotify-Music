@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+@keyframes color {
+    0% {background-color: rgba(0, 110, 255, 0.082);}
+    50% {background-color: rgba(172, 61, 10, 0.082);}
+    100% {background-color: rgba(0, 110, 255, 0.082);}
+}
+header{
+    background-color: rgba(119, 55, 2, 0.651);
+}
+header nav ul{
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul li{
+    list-style: none;
+    padding: 1rem;
+    transition: 400ms;
+}
+header nav ul li:hover{
+    transform: scale(1.2);
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+}
+header nav ul li a:hover{
+    text-decoration: overline;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.links div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.links div h2{
+    position: relative;
+    left: 2.2rem;
+}
+.links ul li{
+    padding: 1rem;
+    position: relative;
+    /* left: 45 */
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    width: 100%;
+    border: 2px solid black;
+    transition: 600ms;
+}
+.links ul li:hover{
+    transform: scale(1.12);
+    animation: color 6000ms infinite;
+}
+.links ul li a{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    transition: 600ms;
+    padding: 0.6rem;
+    /* left: 0.5rem; */
+}
+.links ul li img{
+    display: inline-block;
+    height: 50px;
+}
+.links ul li a:hover{
+    color: grey;
+}
+footer{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.678);
+    justify-content: center;
+    color: white;
+}
